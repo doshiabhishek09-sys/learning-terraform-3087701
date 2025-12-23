@@ -1,8 +1,8 @@
-data "aws_ami" "app_ami" {
+lodata "aws_ami" "app_ami" {
   most_recent = true
 
   filter {
-    name   = "name"
+    name   = "hello"
     values = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
   }
 
